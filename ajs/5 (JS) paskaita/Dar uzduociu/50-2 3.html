@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Atsitiktiniai skaičiai</title>
+    <style>
+        .raudona{
+            font: bold 50px Tahoma;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p>Jūsų skaičius:<br>
+    <script>
+        //Atvaizduoti sveikąjį skaičių nuo 10 iki 30;
+        var x = Math.random();
+        var rez = x * 20 + 10;//[10.000;30.00]
+        var sv = Math.round(rez);//[10;30]
+        //var reikalingas = x*29+10;//[0;1]*29=>[0;29] -> +10=> [10;39]
+        
+        //Atvaizduoti sveikąjį skaičių nuo 15 iki 40;
+        var rez2 = Math.random() * 25 + 15; //[0;1]*25=>[0;25]+15
+        rez2 = Math.round(rez2);//tak, kad pasidarytu sveikasi skaicius
+        //Atvaizduoti sveikąjį skaičių nuo -20 iki 55;
+
+        var rez3 = Math.round(Math.random() * 75 + (-20)); 
+        
+        document.write(sv+" "+rez2+" "+rez3);
+        //Atvaizduoti sveikąjį skaičių nuo -20 iki -60;  *(-40)-20
+        //Atvaizduoti sveikąjį skaičių nuo -60 iki -20;  *(-40)-20
+        
+        //Viename iš ATVAIZDAVIMŲ: jei tai skaičius, kuris dalinasi iš 5-ių, tegul bus raudonas
+        //Viename iš ATVAIZDAVIMŲ: jei tai lyginis skaičius - tegul bus ...
+    </script>
+    </p>
+</body>
+</html>

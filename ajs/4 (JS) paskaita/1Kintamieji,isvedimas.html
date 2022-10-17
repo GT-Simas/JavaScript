@@ -1,0 +1,33 @@
+<!DOCTYPE htm>
+<html lang="lt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JavaScript - kintamieji, isvedimas</title>
+</head>
+
+<body>
+    <h1>Kintamieji, išvedimas</h1>
+    <script>
+        //sukuriami kintamieji, jiems priskiriamos pradinės reikšmės
+        var kint1 = 150;
+        var kint2 = 25;
+        // isvedame pradines kintamųjų reikšmes puslapyje
+        document.write('Turime kintamuosius:<br>');
+        document.write('kint1=' + kint1 + '<br>');
+        document.write('kint2=' + kint2 + '<br>');
+        //keisime kintamųjų reikšmes
+        //atliekame pirmojo kintamojo padidinimą 2 kartus, gautą reikšmę priskirdami tam pačiam kintamąjam
+        kint1 = kint1 * 2;
+        //atliekame antrojo kintamojo padidinimą 3 vienetais, gautą reikšmę priskirdami tam pačiam kintamąjam
+        kint2 = kint2 + 3;
+        // isvedame pakeistas kintamųjų reikšmes puslapyje
+        document.write('Atlikus kint1*2 ir kint3+3 gauname:<br>');
+        document.write('kint1=' + kint1 + '<br>');
+        document.write('kint2=' + kint2 + '<br>');
+
+    </script>
+
+</body>
+
+</html>

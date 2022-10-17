@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Sąlyginiai sakiniai</h1>
+    <script>
+	   
+	 //Įvedamas savaitės dienos numeris, išvedamas lietuviškas pavadinimas
+	 var sd = prompt('Iveskite savaites dienos numeri (darbo dienos)',1);
+
+	 sd = sd * 1;//pakeiciu duomenu tipa i int
+	 switch(sd){
+	    case 1:{ alert('Pirmadienis'); break;}
+	    case 2:{ alert('Antradienis'); break;}
+	    case 3:{ alert('Treciadienis'); break;}
+	    case 4:{ alert('Ketvirtadienis'); break;}
+	    case 5:{ alert('Penktadienis'); break;}
+		default:{alert('Duomenu ivedimo klaida');}
+	 }
+	 
+    </script>
+
+</body>
+
+</html>

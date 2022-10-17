@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Traukinys</title>
+</head>
+<body>
+    <h1>Traukinio uždavinys</h1>
+    <script>
+        let n = prompt('kiek keleiviu', 111)
+        let m = prompt('ne i vilniu', 11)
+        let v = prompt('vagonai', 3);
+        let nV = n -m;
+        let ats = nV / v;
+
+if(n < m || n < 0 || m < 0 || v < 0 || n < m || n >= v*100 || v > 5 ){
+document.write('neteisingi duomenys')
+}
+
+else{
+    document.write('vidutinis keleiviu i vilniu skaicius ' + ats);
+}
+
+    </script>
+    <hr>
+    <p>2021&copy;</p>
+</body>
+</html>

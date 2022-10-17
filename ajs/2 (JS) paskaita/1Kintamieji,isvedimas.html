@@ -1,0 +1,40 @@
+<!DOCTYPE htm>
+<html lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>JavaScript - kintamieji, isvedimas</title>
+</head>
+
+<body>
+<h1>Kintamieji, išvedimas</h1>
+<script>
+//cia reikia rasyti JS koda
+//programavimo kalbu savokos
+//output - isvedimas, duomenu atvaizdavimas
+//JS+HTML:" kaip is JS isvesti i puslapi
+//1 budas:
+document.write('Pavadinimas');
+document.write("<br>Kažkas");
+document.write('<hr>');
+//Kintamieji - ivardinta komp. atminties vieta, skirta vienos reiksmes saugojimui
+var x = 10; // sukuriu kint. x, jasm priskiriu 10
+//programos vykdymo kintamojo reiksme gali keistis
+document.write('Pirmojo KD atlikimo metu gali gauti');
+document.write(x);
+x = 8;
+document.write("<br>Pirmojo KD perrrasymas metu gali gauti");
+document.write(x);
+
+//kaip isvesti ir daug paaiskinimu ir kint reiksmiu nenaudojant daug document.write
+var a, b, c; //reiksmes neapibreztos
+a = 1;
+b = 5;
+c = a + b; //6
+//c = 6
+//document.write('<hr>c = ');
+//document.write(c);
+document.write('<hr>c = ' + c + '<br> b = ' + b);
+</script>
+
+</body>
+</html>

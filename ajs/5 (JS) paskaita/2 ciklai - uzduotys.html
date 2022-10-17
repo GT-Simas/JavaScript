@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+   <meta charset="utf-8">
+   <title>JavaScript</title>
+</head>
+
+<body>
+
+   <script>
+      //ciklas - pasikartojantys veiksmai
+      // for, while, do while, for in 
+      //1. for(ciklo kintamasis ir jo pradine reiksme;salyga su ciklo kintamuoju;ciklo kint zingsnis){}
+
+      for (var x = 5; x < 20; x = x + 2) {
+         document.write(x + '<br>');
+      }
+//x=5 5<20 true
+//x=7  7<20 true
+//...
+//x=21 21<20 false
+
+//Užduotys:
+//0. Parašykite programą, kuri ekrane parodytų visus sveikųjų teigiamų skaičių intervalo [n; m] skaičius. Skaičiai vienas nuo kito atskiriami kableliu.
+var n = prompt('iveskite intervalo [n;m] pradzia n=',10);
+var m = prompt('iveskite intervalo [n;m] pabaiga n=',30);
+if(n < m){
+   document.write("<h2>")
+for(var x = n; x <=n; x++){
+   document.write(x+', ')
+}
+   document.write('</h2>')
+}
+else {
+   document.write('<p>Intervalas ['+n+';'+m+'] neegzistuoja</p>');
+}
+//1. Parašykite programą, kuri ekrane parodytų visus lyginius sveikųjų teigiamų skaičių intervalo [n; m] skaičius. Skaičiai vienas nuo kito atskiriami kableliu.
+//[10;30] -> 10, 12, 14... 30
+//[11;31] -> 12,14...30
+var n = prompt('iveskite intervalo [n;m] pradzia n=')
+//2. Parašykite programą, kuri apskaičiuos ir išves skaičių nuo 1 iki 100 sumą.
+var suma = 0
+for(var z = 1; z <= 100; z++){
+   suma = suma + z;
+}
+document.write('<p>1+2+3...+100='+suma+'</p>');
+//2.1. Parašykite programą, kuri apskaičiuos ir išves skaičių nuo n iki m sumą.
+var suma = 0
+m = prompt('iveskite iki kiek nori gauti')
+for(var n = prompt('iveskite nuo kiek pradeti',1); n <= m ; n++){
+   suma = suma + n;
+}
+document.write('<p>1+2+3...+100='+suma+'</p>');
+
+
+   </script>
+
+</body>
+
+</html>

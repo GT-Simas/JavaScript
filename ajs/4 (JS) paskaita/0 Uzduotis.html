@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript</title>
+</head>
+
+<body>
+
+<script>
+//Parašykite programą, kuri patikrintų, ar iš trijų atkarpų a, b, c galima sudaryti trikampį ir jei galima - kokį trikampį: lygiašonį, lygiakraštį ar įvairiakraštį.
+
+var a = prompt('iveskite pirmaja krastine');
+var b = prompt('iveskite antraja krastine');
+var c = prompt('iveskite treciaja krastine');
+if(a + b > c && b + c > a && a + c > b){
+document.write('<p> trikampis abc egzistuoja</p>');
+if(a===b ||  b===c){
+document.write('lygiakrastis')
+}
+else if(a===b || b===c || c===a){
+    document.write('lygiasonis');
+}
+else{
+    document.write('ivairiakrastis')
+}
+}
+else{
+    document.write('<p> neteisingi duomenys</p>')
+}
+</script>
+
+</body>
+</html>

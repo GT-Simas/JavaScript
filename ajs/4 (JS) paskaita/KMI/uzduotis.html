@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Kūno masės indeksas</h1>
+    <hr>
+    <script>
+        /* Pasikrovus puslapiui prašoma įvesti vardą, ūgį(cm) [nuo 120 iki 250], svorį [nuo 30 iki 250].
+           Įsitikinus, kad skaitinės reikšmės įvestos teisingai apskaičiuojamas KMI
+           Puslapyje išvedama:
+               Vardas: ....
+               Ūgis: ... cm
+               Svoris: ...kg
+               KMI: ... (žodinis patikslinimas, pvz. normali kūno masė)
+        */
+var vard = prompt('ivesk savo vardą',"" );
+var ug = prompt('iveskite ug cm nuo(120 iki 250', ",");
+var sv = prompt('iveskite svori kilogramais(3.5 iki 150)', ",");
+
+if (ug < 120 || ug > 250){
+    document.write('<p>Blogai ivedete ugi</p>');
+}
+else if (sv < 30 || sv > 250){
+document.write('<p>Blogai ivedete svori</p>');
+}
+else if(sv > 30 || sv < 250 && ug > 120 || ug < 250){
+    document.write('<p> vardas:  '+vard+'</p>');
+    document.write('<p> ugis:  '+ug+'</p>');
+    document.write('<p> svoris:  '+sv+'</p>');
+    ugi=ug/100;
+    ugis=ugi*ugi;
+    KMI=sv/ugis;
+    document.write('<p> jusu kmi: '+KMI+'</p>')
+    if(KMI < 16){
+        document.write('<p>kuno mases perteklius</p>');}
+        else if(KMI < 18){document.write('<p>kuno mases trukumas</p>');}
+        else if(KMI < 25){document.write('<p>NORMA</p>');}
+        else if(KMI < 30){document.write('<p>perteklius</p>');}
+        else if(KMI < 35){document.write('<p>I lugio nutikimas</p>');}
+        else if(KMI < 40){document.write('<p>II lygio nutukimas</p>');}
+        else if(KMI < 45){document.write('<p>III lygis nutukimas</p>');}
+}
+else{
+document.write('<p>Netinkama ugio arba svorio reiksme')
+}
+    </script>
+
+</body>
+
+</html>
